@@ -1,0 +1,8 @@
+<header class="cover bg-center" style="background-image: url({{ .Params.feature_image | absURL }});">
+    <div class="bg-black-40">
+        {{ partial "nav.html" . }}
+        <div class="pa6 tc lh-copy">
+            <h1 class="white f1 fw2 ttc">{{ .Description }}</h1>
+        </div>
+    </div>
+</header>

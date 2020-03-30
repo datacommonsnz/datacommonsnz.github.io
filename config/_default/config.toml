@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Data Commons"
+
+[params]
+footertext = "© Data-Commons 2020 all rights reserved"
+footersubtext = "Powered by hugo & tachyons"
+
+
+[menu]
+
+[[menu.main]]
+name = "Process"
+url = "/process/"
+weight = 1
+
+[[menu.main]]
+name = "Resources"
+url = "/resources/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 3

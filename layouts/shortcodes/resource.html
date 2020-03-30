@@ -1,0 +1,14 @@
+<!-- card 1 -->
+<div class="flex justify-center items-center">
+    <div class="measure ma4">
+        <h1 class="f2 fw4">{{ .Get 0 }}</h1>
+        <p class="black-70">{{ .Inner }}
+        </p>
+    </div>
+    <!-- thumbnail -->
+    <div style="width: 12em;">
+        <a class="dim" href="{{ .Get 1 | absURL }}">
+            <img src="{{ .Get 2 | absURL }}" alt="">
+        </a>
+    </div>
+</div>
