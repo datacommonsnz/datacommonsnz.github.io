@@ -29,6 +29,7 @@ jobs:
           publish_dir: ./public
           publish_branch: master # Deploy branch
           force_orphan: true
+          cname: datacommons.org.nz
           user_name: 'github-actions[bot]'
           user_email: '38515818+PardusEidolon@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
