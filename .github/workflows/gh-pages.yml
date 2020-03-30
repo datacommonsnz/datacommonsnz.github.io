@@ -1,0 +1,33 @@
+name: hugo gh-pages
+
+on:
+  push:
+    branches:
+      - source # default branch for template source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.4.7
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.5.6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master # Deploy branch
+          user_name: 'github-actions[bot]'
+          user_email: '38515818+PardusEidolon@users.noreply.github.com'
+          commit_message: ${{ github.event.head_commit.message }}
