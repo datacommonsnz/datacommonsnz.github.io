@@ -1,6 +1,34 @@
 {{ define "main" }}
 <section>
     {{ partial "single_header.html" . }}
-    {{ .Content }}
+    <div class="tc pv5">
+
+        <h1 class="fw7 f2 ttc">{{ .Title }}</h1>
+        <h1 class="fw4 f4 i black-70">{{ .Summary }}</h1>
+
+        {{ $sections := split .Content "+++" }}
+        
+        <div class=" f4 pa3 lh-copy measure-wide center w-100">
+            {{ index $sections 0 | safeHTML }}
+        </div>
+        <div class="flex items-center justify-center w-100">
+            {{ range $.Params.resources }} 
+            <a class="f5 link dim br2 ph4 pv4 mb2 dib white bg-orange mv3 mh6" href="{{ .link }}">{{ .title }}</a>
+            {{ end }}
+        </div>
+
+        <div class=pa3>
+            {{ index $sections 1 | safeHTML }}
+        </div>
+    </div>
 </section>
+<section>
+
+        {{ index $sections 2  | safeHTML }}
+
+        <div class="tl center f5 measure-wide pv5 lh-copy ph2">
+            {{ index $sections 3  | safeHTML }}
+        </div>
+
+    </section>
 {{ end }}
