@@ -1,8 +1,5 @@
 {{ define "main" }}
-<section>
-    {{ partial "single_header.html" . }}
     <div class="tc pv5">
-
         <h1 class="fw7 f2 ttc">{{ .Title }}</h1>
         <h1 class="fw4 f4 i black-70">{{ .Summary }}</h1>
 
@@ -21,14 +18,9 @@
             {{ index $sections 1 | safeHTML }}
         </div>
     </div>
-</section>
-<section>
+    {{ index $sections 2  | safeHTML }}
 
-        {{ index $sections 2  | safeHTML }}
-
-        <div class="tl center f5 measure-wide pv5 lh-copy ph2">
+    <div class="tl center f5 measure-wide pv5 lh-copy ph2">
             {{ index $sections 3  | safeHTML }}
-        </div>
-
-    </section>
+    </div>
 {{ end }}

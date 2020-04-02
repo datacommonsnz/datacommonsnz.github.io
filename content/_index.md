@@ -4,6 +4,7 @@ summary: "A high-trust, lower-cost alternative to enable data integration and re
 date: 2020-03-29T14:34:03+13:00
 draft: false
 feature_image: img/river.jpg
+feature_image2: img/fern.jpg
 
 description: "New Zealand can be a world leader in the trusted, inclusive and protected use of shared data, to deliver a
 prosperous society."
@@ -42,8 +43,6 @@ If New Zealand enacts these principles, we will achieve an internationally
 competitive advantage in social and environmental outcomes, data sharing based entrepreneurship, and in science.
 {{< /highlights >}}
 
----
-
 +++
 
 {{< header_image "img/fern.jpg" >}}
@@ -52,11 +51,11 @@ the common good are growing just as fast.
 {{< /header_image >}}
 
 +++
+ 
 The idea of establishing a Data Commons as a means to put these principles into action was
 first proposed by James Mansell in April 2015, in a report to the New Zealand Productivity Commission called
 Handing Back the Social Commons. Since then, the idea of establishing a Data Commons for New Zealand has generated a
-growing
-amount of interest and offers of support.
+growing amount of interest and offers of support.
 
 In June 2016 the New Zealand Data Futures Partnership, the NEXT Foundation, the Bioheritage
 Science Challenge, and Infection agreed to co- fund the development of a blueprint for an alternative model
