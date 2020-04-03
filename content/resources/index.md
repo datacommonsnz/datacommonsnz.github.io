@@ -2,7 +2,7 @@
 title: "Resources"
 date: 2020-03-28T13:18:01+13:00
 draft: false
-feature_image: img/fern2.jpg
+feature_image: img/waterfall.jpg
 description: "Resources"
 layout: resources
 ---

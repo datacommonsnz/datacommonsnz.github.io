@@ -5,8 +5,10 @@
     </head>
     <body>
         <main>
-            {{ block "main" . }}
-            {{ end }}
+            <section>
+                {{ block "pageheader" . }}{{ partial "single_header.html" . }}{{ end }}
+                {{ block "main" . }}{{ end }}
+            </section>   
         </main>
 
     {{ partial "footer.html" . }}

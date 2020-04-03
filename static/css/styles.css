@@ -1,3 +1,20 @@
 body{
     font-family: "source sans pro", sans-serif;
 }
+
+.highlights > p {
+  font-weight: 400;
+  color: black;
+  opacity: 70%;
+}
+
+.highlights > h2 {
+  color: black;
+  font-weight: 600;
+}
+.highlights > h3 {
+  color: black;
+  font-weight: 200;
+  margin-top: 2em;
+  font-size: 2em;
+}

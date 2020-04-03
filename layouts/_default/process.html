@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $sections := split .Content "+++" }}
+
+<div class="pa5 lh-copy">
+    <h1 class="f2 fw4 measure center ttc">{{ .Summary }}</h1>
+    <div class="w-70 center">
+        {{ index $sections 0 | safeHTML }}
+    </div>
+    <div class="f3 fw2 black-70 w-70 mt5 tc center">
+        {{ index $sections 1 | safeHTML }}
+    </div>
+</div>
+
+<div class="flex justify-center">
+    <div class="flex flex-column">
+        <div class="highlights center w-60">
+            {{ index $sections 2 | safeHTML }}
+            {{ index $sections 3 | safeHTML }}
+        </div>
+    </div>
+    <div class="diagram tc fw2 mt5">
+        {{ index $sections 4 | safeHTML }}
+    </div>
+</div>
+{{ end }}
