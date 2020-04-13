@@ -1,12 +1,12 @@
 <!-- card 1 -->
-<div class="flex justify-center items-center">
-    <div class="measure ma4">
-        <h1 class="f2 fw4">{{ .Get 0 }}</h1>
-        <p class="black-70">{{ .Inner }}
+<div class="flex justify-center items-center mt3-ns">
+    <div class="measure ma3 ma2-ns">
+        <h1 class="f3-ns tl-ns tc f6 fw4">{{ .Get 0 }}</h1>
+        <p class="black-70 f5-ns f7">{{ .Inner }}
         </p>
     </div>
     <!-- thumbnail -->
-    <div style="width: 12em;">
+    <div class="w-80 mh3 mh4-m mh5-l mw4-l w-20-m">
         <a class="dim" href="{{ .Get 1 | absURL }}">
             <img src="{{ .Get 2 | absURL }}" alt="">
         </a>

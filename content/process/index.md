@@ -30,22 +30,7 @@ contribute to the commons and enshrine the NZDF principles
 
 Our Data Commons needs to utilise technology that will underpin the NZDF
 principles
-+++
-### 2016 Project Timeline
 
-**MAY** Project Funding secured
-
-**JUN** Project Planning and development  
-
-**JUL** First workshops held  
-
-**AUG** Ideation and Prototype workshops  
-
-**SEP** Case Studies workshops  
-
-**OCT** Report production  
-
-**NOV** Final report and proposal  
 +++
 ![](/img/diagram.png "Diagram_1")  
 

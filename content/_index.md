@@ -3,8 +3,8 @@ title: "The Data Commons Blueprint"
 summary: "A high-trust, lower-cost alternative to enable data integration and reuse."
 date: 2020-03-29T14:34:03+13:00
 draft: false
-feature_image: img/river.jpg
-feature_image2: img/fern.jpg
+feature_image: /img/river.jpg
+feature_image2: /img/fern.jpg
 
 description: "New Zealand can be a world leader in the trusted, inclusive and protected use of shared data, to deliver a
 prosperous society."

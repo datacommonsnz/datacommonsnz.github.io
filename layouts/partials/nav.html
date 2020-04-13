@@ -1,11 +1,11 @@
-<nav class="flex justify-between items-center pa4">
+<nav class="flex justify-between items-center pa2 pa4-ns">
     <div>
-        <a class="dim link white f4 fw6 ttu" href="{{ .Site.BaseURL }}">Data Commons</a>
+        <a class="dim link white f7 fw6 ttu f4-ns" href="{{ .Site.BaseURL }}">Data Commons</a>
     </div>
 
     <div>
         {{ range .Site.Menus.main }} 
-            <a class="f4 ttu fw4 dim link white pa3" href="{{ .URL }}">{{ .Name }}</a> 
+            <a class="f7 ttu fw4 dim link white f4-l f4-m mh2 pa3-ns" href="{{ .URL }}">{{ .Name }}</a> 
         {{ end }}
     </div>
 </nav>
