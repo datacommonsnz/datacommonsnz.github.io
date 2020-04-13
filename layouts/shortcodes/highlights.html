@@ -1,22 +1,22 @@
 {{ if .Get "title"}}
 <div class="pa3">
-    <h1 class="fw7 f2 ttc"> {{ .Get "title" }}</h1>
+    <h1 class="fw7 f3 f2-ns ttc"> {{ .Get "title" }}</h1>
     {{ if .Inner }}
-    <p class="f4 i black-70 measure center">{{ .Inner }}</p>
+    <p class=" f5 f4-ns i black-70 measure center">{{ .Inner }}</p>
     {{ end }}
 </div>
 {{end}}
-<div class="flex flex-wrap">
+<div class="flex flex-wrap justify-center-ns">
     {{ range $i, $highlight := $.Page.Params.highlights }} 
         {{ $col := mod $i 2 }}
         {{ $column_css := cond (eq $col 0) "mr4" "" }}
 
         {{ if eq $col 0 }}
-            <div class="ma4 flex justify-center w-100">
+            <div class="mh2 flex flex-column justify-center-ns">
         {{ end }}
-            <div class='{{ cond (isset . "bgcolor") (print "bg-" $highlight.bgcolor) "" }} {{ $column_css }} w-30'>
-                <h1 class="fw7 f2 ttc">{{ $highlight.title }}</h1>
-                <p class="f4 black-70 lh-copy measure">{{ $highlight.description }}</p>
+            <div class='{{ cond (isset . "bgcolor") (print "bg-" $highlight.bgcolor) "" }} {{ $column_css }} center w-100'>
+                <h1 class="fw7 f4 f2-ns ttc">{{ $highlight.title }}</h1>
+                <p class=" f6 f4-ns black-70 lh-copy measure">{{ $highlight.description }}</p>
             </div>
 
         {{ if eq $col 1 }}
