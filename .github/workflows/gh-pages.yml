@@ -7,14 +7,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.7
+        uses: peaceiris/actions-hugo@v2.4.13
         with:
           hugo-version: 'latest'
           # extended: true
@@ -23,13 +24,13 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.5.6
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: master # Deploy branch
-          force_orphan: true
-          cname: datacommons.org.nz
-          user_name: 'github-actions[bot]'
+#           force_orphan: true
+#           cname: datacommons.org.nz
+          user_name: 'PardusEidolon'
           user_email: '38515818+PardusEidolon@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
